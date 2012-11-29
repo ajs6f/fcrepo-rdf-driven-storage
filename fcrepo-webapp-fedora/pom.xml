@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>fcrepo-webapp-fedora-with-rdf-driven-storage</artifactId>
+	<packaging>war</packaging>
+	<name>fcrepo-webapp-fedora with RDF-driven storage integrated</name>
+	<url>http://www.library.virginia.edu/</url>
+	<build>
+		<finalName>fcrepo-webapp-fedora</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<dependentWarIncludes>**</dependentWarIncludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.fcrepo</groupId>
+			<artifactId>fcrepo-webapp-fedora</artifactId>
+			<version>3.6.1</version>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>edu.virginia.lib.fedora</groupId>
+			<artifactId>akubra-hinted</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>edu.virginia.lib.fedora</groupId>
+			<artifactId>fcrepo-rdfhintprovider</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.akubraproject</groupId>
+			<artifactId>akubra-mem</artifactId>
+			<version>0.4.0</version>
+		</dependency>
+	</dependencies>
+	<parent>
+		<version>0.0.1-SNAPSHOT</version>
+		<groupId>edu.virginia.lib.fedora</groupId>
+		<artifactId>fcrepo-rdf-driven-storage</artifactId>
+	</parent>
+</project>

@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>edu.virginia.lib.fedora</groupId>
+	<artifactId>fcrepo-rdf-driven-storage</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>RDF-driven storage system for Fedora Commons.</name>
+	<description>${project.name}</description>
+
+	<url></url>
+
+	<developers>
+		<developer>
+			<name>A. Soroka</name>
+			<email>ajs6f@virginia.edu</email>
+			<roles>
+				<role>Originator</role>
+			</roles>
+			<organization>the University of Virginia Library</organization>
+			<organizationUrl>http://www.library.virginia.edu</organizationUrl>
+			<timezone>-5</timezone>
+		</developer>
+	</developers>
+
+	<organization>
+		<url>http://www.library.virginia.edu</url>
+		<name>the University of Virginia Library</name>
+	</organization>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<fedora.version>3.6.2</fedora.version>
+	</properties>
+
+	<modules>
+		<module>akubra-hinted</module>
+		<module>akubra-hinted-fedora-itests</module>
+		<module>fcrepo-rdfhintprovider</module>
+		<module>fcrepo-webapp-fedora</module>
+	</modules>
+</project>
